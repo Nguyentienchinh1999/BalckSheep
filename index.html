@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BlackSheep</title>
-
+    <!-- swiper -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+  />
     <!-- font -->
     <link href="//db.onlinewebfonts.com/c/3ead7c787415caafae5f94fcd18ea043?family=Young+Heart" rel="stylesheet" type="text/css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -66,23 +70,54 @@
             </div>
         </section>
         <section class="special">
-            <div class="warp-special">
-                <div class="banner-special">
-                    <img src="./img/bg-banner-special.png" alt="" class="bg-banner-special">
-                    <div class="content-special">
-                        <h2 class="content-special-title font-title">a special space just for you</h2>
-                        <p class="content-special-text">You are looking for a vibrant space, extremely high quality sound light,
-                             suitable for groups of 15-20. Experience the space at The BlackSheep now!
-                        </p>
-                        <div class="btn-content-special">
-                            <button class="btn-content-special-left">Detail</button>    
-                            <button class="btn-content-special-right">Book now</button>   
-                        </div> 
+            <div class="swiper mySwiper2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="warp-special">
+                            <div class="banner-special">
+                                <img src="./img/bg-banner-special.png" alt="" class="bg-banner-special">
+                                <div class="content-special">
+                                    <h2 class="content-special-title font-title">a special space just for you</h2>
+                                    <p class="content-special-text">You are looking for a vibrant space, extremely high quality sound light,
+                                         suitable for groups of 15-20. Experience the space at The BlackSheep now!
+                                    </p>
+                                    <div class="btn-content-special">
+                                        <button class="btn-content-special-left">Detail</button>    
+                                        <button class="btn-content-special-right">Book now</button>   
+                                    </div> 
+                                </div>
+                                <img src="./img/cai-dia-special.png" alt="" class="cai-dia-special">
+                            </div>
+                            <img src="./img/swiper-prev.png" alt="" class="swiper-prev">
+                            <img src="./img/swiper-prev.png" alt="" class="swiper-next">
+                        </div>
+                    </div>
                     </div>
                 </div>
-                div.
-            </div>
+            
         </section>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        // var swiper = new Swiper(".mySwiper", {
+        //   loop: true,
+        //   spaceBetween: 10,
+        //   slidesPerView: 4,
+        //   freeMode: true,
+        //   watchSlidesProgress: true,
+        // });
+        var swiper2 = new Swiper(".mySwiper2", {
+          loop: true,
+          spaceBetween: 10,
+        //   navigation: {
+        //     nextEl: ".swiper-button-next",
+        //     prevEl: ".swiper-button-prev",
+        //   },
+        //   thumbs: {
+        //     swiper: swiper,
+        //   },
+        });
+      </script>
 </body>
 </html>
