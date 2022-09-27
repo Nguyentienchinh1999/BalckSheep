@@ -52,6 +52,7 @@ img{
     width: auto;
     height: auto;
     object-fit:cover;
+    vertical-align: middle
 }
 
 .font-title{
@@ -96,4 +97,9 @@ a{
  button{
      background: none;
      border: none;
+     cursor: pointer;
+ }
+
+ button:hover{
+    box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.25), inset 0px -1px 1px #9A785D;
  }

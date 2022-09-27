@@ -1,5 +1,5 @@
 /* header */
-header{
+.header-pc-tablet{
     position: absolute;
     width: 100%;
     z-index: 1;
@@ -51,6 +51,16 @@ color: #FFFFFF;
     margin-right:40px;
 }
 
+.header-logo{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #060618;
+    opacity: 0.8;
+    padding: 10px 14px;
+}
+
 /* baner */
 .banner{
     position: relative;
@@ -79,25 +89,30 @@ color: #FFFFFF;
 
 .content-banner-title{
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: 550px;
     line-height: 115.3%;
     text-shadow: 0px 0px 5px rgba(214, 179, 95, 0.9);
 }
 
 .content-banner-text{
-    margin: 0 auto;
+    margin: 7px auto 36px auto;
     max-width:645px;
+}
+
+.btn-content-banner{
+    display: flex;
+    justify-content:center;
 }
 
 .btn-content-baner-left, .btn-content-baner-right{
     font-family: 'Prompt';
-font-style: normal;
-font-weight: 500;
-font-size: 12px;
-line-height: 18px;
-text-align: center;
-letter-spacing: 0.3em;
-text-transform: uppercase;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
 color: #FFFFFF;
     width: 216px;
     height:60px;
@@ -106,8 +121,87 @@ color: #FFFFFF;
 border-radius: 5px;
 }
 
-
 .btn-content-baner-left{
     border: 1px solid #D1AF5B;
     color: #D1AF5B;
+    margin-right: 20px;
+}
+
+.btn-content-baner-right{
+    color: #12100E;
+    background: #D1AF5B;
+border-radius: 5px;
+text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+}
+/* special */
+.special{
+    display: flex;
+    justify-content: center;
+}
+
+.warp-special{
+    position: relative;
+    background: linear-gradient(90deg, #1D1D2D 0%, rgba(6, 6, 24, 0.17) 93.33%);
+}
+
+.banner-special{
+    position: relative;
+}
+
+.bg-banner-special{
+    max-width:100%;
+    opacity: 0.8;
+}
+
+.content-special{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50px;
+    z-index: 1;
+}
+
+.content-special-title{
+    max-width: 376px;
+    text-align: unset;
+}
+
+.content-special-text{
+    max-width:481px;
+    text-align:unset;
+    margin: 15px 0 32px 0
+}
+
+.btn-content-special{
+    display: flex;
+    align-items: center;
+}
+
+.btn-content-special-left, .btn-content-special-right{
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+color: #FFFFFF;
+    width: 216px;
+    height:60px;
+    max-height: 60px;
+   
+border-radius: 5px;
+}
+.btn-content-special-left{
+    border: 1px solid #D1AF5B;
+    color: #D1AF5B;
+    margin-right: 20px;
+}
+
+.btn-content-special-right{
+    color: #12100E;
+    background: #D1AF5B;
+border-radius: 5px;
+text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
 }

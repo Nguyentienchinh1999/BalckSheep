@@ -15,10 +15,11 @@
     <!-- css -->
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/respon.css">
 </head>
 <body>
     <div class="app">
-        <header>
+        <header class="header-pc-tablet hide-on-mobile">
             <div class="header-top">
                 <div class="header-top-left">
                     <img class="header-top-left-img-1" src="./img/logo-header-top-left1.png" alt="">
@@ -41,17 +42,45 @@
                     <a href="#" class="header-main-menu-item">press</a>
                 </div>
             </div>
+            <div class="header-logo">
+                <img src="./img/logo-header-main.png" alt="">
+            </div>
+        </header>
+        <header class="header-mobile hide-on-pc hide-on-tablet">
+            <img src="./img/logo-header-mobile-left.png" alt="" class="logo-left">
+            <img src="./img/logo-header-mobile-mid.png" alt="" class="logo-mid">
+            <img src="./img/icon-menu-mobile.png" alt="" class="icon-menu-right">
         </header>
         <section class="banner">
             <div class="bg-banner">
                 <img src="./img/bg-banner.png" alt="">
             </div>
             <div class="content-banner">
-                <h2 class="content-banner-title">Gentlement night club: year end party sartorial</h2>
+                <h2 class="content-banner-title font-title">Gentlement night club: year end party sartorial</h2>
                 <p class="content-banner-text">2020 đi đến hồi kết đồng nghĩa những sự kiện signature
                      nhà Cừu Đen cũng lật đến chương cuối của chặng đường 1 năm. Và tối nay, Gentlemen Night Club...</p>
-                 <button class="btn-content-baner-left">Detail</button>    
-                 <button class="btn-content-baner-right">Book now</button>    
+                <div class="btn-content-banner">
+                    <button class="btn-content-baner-left">Detail</button>    
+                    <button class="btn-content-baner-right">Book now</button>   
+                </div> 
+            </div>
+        </section>
+        <section class="special">
+            <div class="warp-special">
+                <div class="banner-special">
+                    <img src="./img/bg-banner-special.png" alt="" class="bg-banner-special">
+                    <div class="content-special">
+                        <h2 class="content-special-title font-title">a special space just for you</h2>
+                        <p class="content-special-text">You are looking for a vibrant space, extremely high quality sound light,
+                             suitable for groups of 15-20. Experience the space at The BlackSheep now!
+                        </p>
+                        <div class="btn-content-special">
+                            <button class="btn-content-special-left">Detail</button>    
+                            <button class="btn-content-special-right">Book now</button>   
+                        </div> 
+                    </div>
+                </div>
+                div.
             </div>
         </section>
     </div>
