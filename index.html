@@ -16,6 +16,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css">
     <!-- css -->
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/index.css">
@@ -71,7 +74,7 @@
         </section>
         <section class="special">
             <div class="swiper mySwiper2">
-                <div class="swiper-wrapper">
+                <div class="swiper-wrapper">        
                     <div class="swiper-slide">
                         <div class="warp-special">
                             <div class="banner-special">
@@ -88,35 +91,90 @@
                                 </div>
                                 <img src="./img/cai-dia-special.png" alt="" class="cai-dia-special">
                             </div>
-                            <img src="./img/swiper-prev.png" alt="" class="swiper-prev">
-                            <img src="./img/swiper-prev.png" alt="" class="swiper-next">
+                           
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="warp-special">
+                            <div class="banner-special">
+                                <img src="./img/bg-banner.png" alt="" class="bg-banner-special">
+                                <div class="content-special">
+                                    <h2 class="content-special-title font-title">a special space just for you</h2>
+                                    <p class="content-special-text">You are looking for a vibrant space, extremely high quality sound light,
+                                         suitable for groups of 15-20. Experience the space at The BlackSheep now!
+                                    </p>
+                                    <div class="btn-content-special">
+                                        <button class="btn-content-special-left">Detail</button>    
+                                        <button class="btn-content-special-right">Book now</button>   
+                                    </div> 
+                                </div>
+                                <img src="./img/cai-dia-special.png" alt="" class="cai-dia-special">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="warp-special">
+                            <div class="banner-special">
+                                <img src="./img/bg-banner-special.png" alt="" class="bg-banner-special">
+                                <div class="content-special">
+                                    <h2 class="content-special-title font-title">a special space just for you</h2>
+                                    <p class="content-special-text">You are looking for a vibrant space, extremely high quality sound light,
+                                         suitable for groups of 15-20. Experience the space at The BlackSheep now!
+                                    </p>
+                                    <div class="btn-content-special">
+                                        <button class="btn-content-special-left">Detail</button>    
+                                        <button class="btn-content-special-right">Book now</button>   
+                                    </div> 
+                                </div>
+                                <img src="./img/cai-dia-special.png" alt="" class="cai-dia-special">
+                            </div>
+                           
                         </div>
                     </div>
                     </div>
+            </div>
+            <div class="nav-special">
+                <div thumbsSlider="" class="swiper mySwiper">
+                    <div class="swiper-wrapper wraper-nav">
+                        <i class="fa-light fa-chevron-left"></i>
+                        <div class="swiper-slide text-nav-item">
+                            <p>Party</p>
+                        </div>
+                        <div class="swiper-slide text-nav-item">
+                            <p>birthday</p>
+                        </div>
+                        <div class="swiper-slide text-nav-item  ">
+                            <p>couple</p>
+                        </div>
+                        <i class="fa-light fa-chevron-left"></i>
+                    </div>
                 </div>
+            </div>
+            
             
         </section>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script>
-        // var swiper = new Swiper(".mySwiper", {
+        var swiper = new Swiper(".mySwiper", {
         //   loop: true,
         //   spaceBetween: 10,
-        //   slidesPerView: 4,
+          slidesPerView: 3,
         //   freeMode: true,
         //   watchSlidesProgress: true,
-        // });
+        });
         var swiper2 = new Swiper(".mySwiper2", {
           loop: true,
           spaceBetween: 10,
-        //   navigation: {
-        //     nextEl: ".swiper-button-next",
-        //     prevEl: ".swiper-button-prev",
-        //   },
-        //   thumbs: {
-        //     swiper: swiper,
-        //   },
+          navigation: {
+            nextEl: ".swiper-prev",
+            prevEl: ".swiper-next",
+          },
+          thumbs: {
+            swiper: swiper,
+          },
         });
       </script>
 </body>
