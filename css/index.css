@@ -74,7 +74,7 @@ color: #FFFFFF;
 
 .bg-banner img{
     max-width: 100%;
-    height: 999px;
+    /* height: 999px; */
 }
 
 .content-banner{
@@ -214,35 +214,58 @@ border-radius: 5px;
 text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
-.wraper-nav{
-    max-width:920px; 
-    margin: 0 auto;
+
+.nav-special{
     display: flex;
     align-items: center;
-    justify-content:space-between;
+    justify-content: center;
 }
 
-.wraper-nav .text-nav-item{
-    max-width: 30%;
+.nav-special .swiper-pagination{
+    position:unset;
+    width: unset;
 }
-.wraper-nav .swiper-slide-thumb-active{
+
+.nav-special i{
+    margin: 60px 0;
+    font-size:40px;
+    color:whitesmoke
+}
+
+.nav-special i:hover{
+    cursor: pointer;
     background: linear-gradient(180deg, #D9AE46 0%, #E4BF72 100%);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 }
 
-.wraper-nav i{
-    font-size:40px;
-    color:whitesmoke
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+    margin: 0 40px;
 }
 
-.wraper-nav i:hover{
-    cursor: pointer;
+.pagination-sepical-text .swiper-pagination-bullet:hover{
+    text-shadow: 0px 0px 5px rgba(214, 179, 95, 0.9);
 }
 
-.text-nav-item p{
+.pagination-sepical-text .swiper-pagination-bullet{
+    background: none;
+    width:unset;
+    height:unset;
+    opacity: unset;
+    border-radius: 0;
     font-family: 'Prompt';
     font-size: 31.7849px;
 line-height: 32px;letter-spacing: 0.3em;
 text-transform: uppercase;
+color: #F1E9D3;
+}
+
+.pagination-sepical-text  .swiper-pagination-bullet-active{
+    background: linear-gradient(180deg, #D9AE46 0%, #E4BF72 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.text-nav-item p{
+    
 }

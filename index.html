@@ -18,7 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
 
     <!-- icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css">
+   <link rel="stylesheet" href="./css/themify-icons/themify-icons.css">
     <!-- css -->
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/index.css">
@@ -73,7 +73,8 @@
             </div>
         </section>
         <section class="special">
-            <div class="swiper mySwiper2">
+            <!-- special pc tablet view -->
+            <div class="swiper mySwiper2 hide-on-mobile">
                 <div class="swiper-wrapper">        
                     <div class="swiper-slide">
                         <div class="warp-special">
@@ -84,12 +85,12 @@
                                     <p class="content-special-text">You are looking for a vibrant space, extremely high quality sound light,
                                          suitable for groups of 15-20. Experience the space at The BlackSheep now!
                                     </p>
-                                    <div class="btn-content-special">
+                                    <div class="btn-content-special hide-on-mobile">
                                         <button class="btn-content-special-left">Detail</button>    
                                         <button class="btn-content-special-right">Book now</button>   
                                     </div> 
                                 </div>
-                                <img src="./img/cai-dia-special.png" alt="" class="cai-dia-special">
+                                <img src="./img/cai-dia-special.png" alt="" class="cai-dia-special hide-on-mobile">
                             </div>
                            
                         </div>
@@ -103,12 +104,12 @@
                                     <p class="content-special-text">You are looking for a vibrant space, extremely high quality sound light,
                                          suitable for groups of 15-20. Experience the space at The BlackSheep now!
                                     </p>
-                                    <div class="btn-content-special">
+                                    <div class="btn-content-special hide-on-mobile">
                                         <button class="btn-content-special-left">Detail</button>    
                                         <button class="btn-content-special-right">Book now</button>   
                                     </div> 
                                 </div>
-                                <img src="./img/cai-dia-special.png" alt="" class="cai-dia-special">
+                                <img src="./img/cai-dia-special.png" alt="" class="cai-dia-special hide-on-mobile">
                             </div>
                             
                         </div>
@@ -122,60 +123,67 @@
                                     <p class="content-special-text">You are looking for a vibrant space, extremely high quality sound light,
                                          suitable for groups of 15-20. Experience the space at The BlackSheep now!
                                     </p>
-                                    <div class="btn-content-special">
+                                    <div class="btn-content-special hide-on-mobile">
                                         <button class="btn-content-special-left">Detail</button>    
                                         <button class="btn-content-special-right">Book now</button>   
                                     </div> 
                                 </div>
-                                <img src="./img/cai-dia-special.png" alt="" class="cai-dia-special">
+                                <img src="./img/cai-dia-special.png" alt="" class="cai-dia-special hide-on-mobile">
                             </div>
                            
                         </div>
                     </div>
-                    </div>
+                 </div>
+                 <div class="nav-special">
+                    <i class="ti-angle-left swiper-prev"></i>
+                    <div class="swiper-pagination pagination-sepical-text"></div>
+                    <i class="ti-angle-right swiper-next"></i>
+                 </div>
             </div>
-            <div class="nav-special">
-                <div thumbsSlider="" class="swiper mySwiper">
-                    <div class="swiper-wrapper wraper-nav">
-                        <i class="fa-light fa-chevron-left"></i>
-                        <div class="swiper-slide text-nav-item">
-                            <p>Party</p>
-                        </div>
-                        <div class="swiper-slide text-nav-item">
-                            <p>birthday</p>
-                        </div>
-                        <div class="swiper-slide text-nav-item  ">
-                            <p>couple</p>
-                        </div>
-                        <i class="fa-light fa-chevron-left"></i>
+
+            <!-- speical mobile -view -->
+            <div class="wraper-special-mb hide-on-pc hide-on-tablet">
+                <img class="cai-dia-special-mb hide-on-pc hide-on-tablet" src="./img/cai-dia-sepical-mb.png" alt="">
+                <div class="wraper-special-mb-banner">
+                    <img class="bg-banner-special-mb" src="./img/bg-banner-sepcial-mb.png" alt="">
+                    <div class="content-special-mb">
+                        <h2 class="content-special-title font-title">a special space just for you</h2>
+                        <p class="content-special-text">You are looking for a vibrant space, extremely high quality sound light,
+                             suitable for groups of 15-20. Experience the space at The BlackSheep now!
+                        </p>
+                      
                     </div>
                 </div>
+                <h2 class="wraper-special-mb-title">
+                    Party
+                </h2>
             </div>
-            
-            
         </section>
+        
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script>
-        var swiper = new Swiper(".mySwiper", {
-        //   loop: true,
-        //   spaceBetween: 10,
-          slidesPerView: 3,
-        //   freeMode: true,
-        //   watchSlidesProgress: true,
-        });
+       
         var swiper2 = new Swiper(".mySwiper2", {
           loop: true,
           spaceBetween: 10,
+          pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          hideOnClick: 	true,
+        },
           navigation: {
             nextEl: ".swiper-prev",
             prevEl: ".swiper-next",
-          },
-          thumbs: {
-            swiper: swiper,
-          },
+          }   
         });
+      </script>
+      <script>
+        let textNavSpeical = document.querySelector(".pagination-sepical-text").children
+            textNavSpeical[0].textContent = 'Party'
+            textNavSpeical[1].textContent = 'Birthday'
+            textNavSpeical[2].textContent = 'Couple'
       </script>
 </body>
 </html>

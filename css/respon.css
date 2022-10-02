@@ -4,7 +4,7 @@
     }
 }
 
-@media(min-width: 769px) and (max-width: 1023px){
+@media(min-width: 740px) and (max-width: 1023px){
     .hide-on-tablet{
         display:none;
     }
@@ -21,6 +21,15 @@
     padding: 5px 20px;
     }
 
+    .banner{
+        height:auto;
+    }
+
+    .bg-banner img{
+        height:673px;
+    }
+
+
     .content-banner-title{
         font-size: 32px;
         max-width: 270px;
@@ -28,8 +37,70 @@
 
     .content-banner-text{
         font-size:12px;
-        max-width:322px;
         margin-bottom: 13px;
+        max-width:322px;
     }
 
+    /* special */
+    .special{
+        overflow:hidden;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .wraper-special-mb{
+        margin: 60px 0;
+       position: relative;
+    }
+
+    .wraper-special-mb .cai-dia-special-mb{
+        position: absolute;
+        transform: rotate(12.47deg);
+        z-index: 1;
+        right: 0;
+        top:-90px;
+    }
+
+    .wraper-special-mb .wraper-special-mb-title{
+        margin-top: 30px;
+        font-family: 'Prompt';
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 24px;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        color: #F1E9D3;
+    }
+
+    .wraper-special-mb .wraper-special-mb-title:hover{
+        text-shadow: 0px 0px 5px rgba(214, 179, 95, 0.9);
+    }
+
+    .wraper-special-mb .wraper-special-mb-banner{
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+  
+
+    .wraper-special-mb .content-special-mb{
+        position: absolute;
+        max-width: 280px;
+        text-align: center;
+        bottom: 12px;
+    }
+
+    .content-special-mb .content-special-title{
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .content-special-mb .content-special-text{
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    
 }
