@@ -74,7 +74,30 @@
         text-align: center;
     }
 
-   
+    .warrper-about{
+        margin: 0 20px;
+    }
+
+    .warrper-about .card-item-about{
+        flex-direction: column-reverse;
+    }
+    .card-item-about .cai-dia-about{
+        top: -100px;
+    left: -50px;
+    }
+
+    .warrper-about .card-item-about{
+        padding: 20px;
+    }
+
+    .card-item-about .thumbnail-card-item-about{
+        margin-left: unset;
+        width: 100%;
+    }
+    .card-item-about .content-card-item-about{
+        width: 100%;
+        padding: 20px 30px 30px 30px;
+    }
     
 }
 
@@ -287,5 +310,58 @@ line-height: 40px;
         right: -85px;
         font-size: 40px;
 line-height: 40px;
+    }
+    /* about */
+    .warrper-about{
+        margin: 0 10px
+    }
+
+    .warrper-about .title-about{
+        margin: 0 20px 100px;
+        font-weight: 400;
+font-size: 32px;
+line-height: 32px;
+    }
+
+    .warrper-about .card-item-about{
+        flex-direction: column-reverse;
+        padding: 14px
+    }
+
+    .card-item-about .cai-dia-about{
+        width: 142px;
+        transform: rotate(12.47deg);
+        top: -100px;
+        right: 0;
+        left: unset;
+    }
+
+    .card-item-about .thumbnail-card-item-about{
+        margin: unset;
+    }
+
+    .card-item-about .content-card-item-about{
+        width:100%;
+        padding: 18px 24px 24px 24px;
+    }
+
+    .content-card-item-about .title{
+        font-size: 14.8728px;
+line-height: 23px;
+    }
+    .content-card-item-about .text{
+        font-size: 10.5639px;
+line-height: 16px;
+        margin: 17px 0 20px 0
+    }
+
+    .content-card-item-about .link p{
+        font-size: 13.0137px;
+line-height: 20px;
+letter-spacing: 0.3em;
+    }
+
+    .content-card-item-about .link img{
+        width: 25px
     }
 }

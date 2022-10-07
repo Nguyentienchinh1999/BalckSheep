@@ -562,4 +562,98 @@ z-index: 1;
     right: -200px;
     text-shadow: 0px 0px 2.85602px rgba(214, 179, 95, 0.9);
 }
+/* about */
+.about{
+    margin: 180px 0;
+}
 
+.warrper-about{
+    margin-left: 165px;
+}
+
+.warrper-about .title-about{
+    margin-bottom: 80px;
+    font-size: 72px;
+line-height: 72px;
+    max-width:768px;
+    text-align:left;
+    text-shadow: 0px 0px 5px rgba(214, 179, 95, 0.9);
+}
+
+
+.warrper-about .card-item-about{
+    max-width:1082px;
+    padding: 32px 32px 32px 133px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background: #21212F;
+border-radius: 20px;
+}
+.card-item-about .cai-dia-about{
+    position: absolute;
+    top: 0;
+    left: -100px;
+}
+
+.card-item-about .content-card-item-about{
+    width: 50%;
+}
+
+.card-item-about .thumbnail-card-item-about{
+    margin-left: 30px;
+}
+
+.card-item-about .thumbnail-card-item-about img{
+    width: 100%;
+}
+
+.content-card-item-about .title{
+    margin-bottom: 12px;
+    font-weight: 600;
+font-size: 24px;
+line-height: 37px;
+letter-spacing: 0.1em;
+text-align: left;
+}
+
+.content-card-item-about .text{
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.content-card-item-about .play-music{
+    display:flex;
+    align-items: center;
+}
+
+.content-card-item-about .play-music .line-play-music{
+    width: 442px;
+    max-width: 442px;
+height: 1px;
+background: #ECDDCD;
+opacity: 0.5;
+border-radius: 10px;
+margin-left: 6px;
+}
+
+.content-card-item-about .link{
+    display: flex;
+    align-items: center;
+    
+}
+
+.content-card-item-about .link p{
+    margin-right: 14px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.3em;
+    text-decoration-line: underline;
+    text-decoration-color: #DCC37D;
+    background: linear-gradient(180deg, #D9AE46 0%, #E4BF72 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
