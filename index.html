@@ -19,6 +19,7 @@
 
     <!-- icon -->
    <link rel="stylesheet" href="./css/themify-icons/themify-icons.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <!-- css -->
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/index.css">
@@ -338,8 +339,8 @@
             </div>
         </section>
         <section class="about">
-            <div class="warrper-about">
-                <h2 class="font-title title-about">What are they talking about the black sheep?</h2>
+             <h2 class="font-title title-about">What are they talking about the black sheep?</h2> 
+             <div id="warrper-about" class="warrper-about">
                 <div class="card-item-about">
                     <img src="./img/cai-dia-about.png" alt="" class="cai-dia-about">
                     <div class="content-card-item-about">
@@ -359,8 +360,63 @@
                         <img src="./img/img-1-about.png" alt="">
                     </div>
                 </div>
-            </div>
+                <div class="card-item-about">
+                    <img src="./img/cai-dia-about.png" alt="" class="cai-dia-about">
+                    <div class="content-card-item-about">
+                        <h2 class="title">Đừng quẹt Tinder nữa, tới The Black Sheep trải nghiệm Single Night ngay thôi!</h2>
+                        <div class="play-music">
+                            <img class="icon-play-music" src="./img/play-music-about.png" alt="">
+                            <div class="line-play-music"></div>
+                        </div>
+                        <p class="text">Nếu bạn đang cần “thoát ế” mà chưa biết đi đâu để kiếm gấu, hay chỉ đơn giản là cần tìm một nơi để chill mỗi tối,
+                             hãy cùng Halotravel tham khảo đêm Single Night tại The Black Sheep Hà Nội ngay dưới đây nhé! </p>
+                        <a href="#" class="link">
+                            <p class="'text-link" >halotravel.vn</p>
+                            <img class="icon-link" src="./img/drop-right-about.png" alt="">
+                        </a>
+                    </div>
+                    <div class="thumbnail-card-item-about">
+                        <img src="./img/img-2-about.png" alt="">
+                    </div>
+                </div>    
+             </div>           
+                       
         </section>
+        <footer>
+            <div class="top-footer">
+                <img src="./img/logo-top-footer.png" alt="" class="logo-top-footer">
+                <div class="contact">
+                    <h2 class="font-title title-contact">Contact</h2>
+                    <p class="address-contact">Address: 20 Tong duy tan str. Ba Dinh Dist. hanoi</p>
+                    <p class="hotline-contact">Hotline: 098 888 6321</p>
+                    <p class="email-contact">email: contact@nkg.com.vn</p>
+                </div>
+                <div class="follow-us">
+                    <h2 class="font-title title-follow-us">Follow us</h2>
+                    <span class="icon-facebook"><i class="fa-brands fa-facebook"></i></span>
+                    <span class="icon-twitter"><i class="fa-brands fa-twitter"></i></span>
+                    <span class="icon-youtube"><i class="fa-brands fa-youtube"></i></span>
+                </div>
+            </div>
+            <div class="bot-footer">
+                <div class="bot-left-footer">
+                  <div class="group-1">
+                    <p class="text-1">A member of</p>
+                    <img class="logo-1-bot-footer" src="./img/logo-footer-1.png" alt="">
+                  </div>
+                    <div class="group-2">
+                        <p class="text-2">Other brands</p>
+                        <img src="./img/logo-footer-2.png" alt="" class="logo-2-bot-footer">
+                        <img src="./img/logo-footer-3.png" alt="" class="logo-3-bot-footer">
+                    </div>
+                </div>
+                <div class="bot-right-footer">
+                    <a href="#" class="bot-right-footer-item item-1">Help</a>
+                    <a href="#" class="bot-right-footer-item item-2">join us</a>
+                    <a href="#" class="bot-right-footer-item item-3">Q&A</a>
+                </div>
+            </div>
+        </footer>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
@@ -395,12 +451,29 @@
           prevEl: ".swiper-prev-magic",
         },
         })
+        // var swiperAbout = new Swiper(".about-swiper", {
+        //     // direction: "vertical",
+        //     slidesPerView: 1,
+        //     spaceBetween: 0,
+        //     loop: true,
+        //     mousewheel: true, 
+        //     autoplay: {
+        //         delay: 6000,
+        //         disableOnInteraction: false
+        //     }
+        // })
       </script>
       <script>
             let textNavSpeical = document.querySelector(".pagination-sepical-text").children
             textNavSpeical[0].innerHTML = 'Party'
             textNavSpeical[1].innerHTML = 'Birthday'
-            textNavSpeical[2].innerHTML = 'Couple'           
+            textNavSpeical[2].innerHTML = 'Couple'      
+            const marqueeContent = document.querySelector(".warrper-about");
+             document.documentElement.style.setProperty("5",marqueeContent.children.length);
+            for(let i = 0; i < 1; i++ ){
+                 marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
+}     
       </script>
+    
 </body>
 </html>

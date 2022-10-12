@@ -67,7 +67,8 @@ h2{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
-    text-transform: uppercase
+    text-transform: uppercase;
+    text-shadow: 0px 0px 5px rgba(214, 179, 95, 0.9);
 }
 p{
     font-style: normal;
