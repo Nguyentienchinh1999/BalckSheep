@@ -25,6 +25,11 @@ html, body{
 *{
     box-sizing: border-box;
 }
+
+@font-face{
+    src: url('./Young\ Heart.otf');
+    font-family: 'Young Heart'
+}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
